@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title></title>
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+        <link rel = "stylesheet" href = "style.css">
+      
+    </head>
+    <body>
+
+        <img class = "img-banner" src = "img/chatt.jpg" alt = "ChatBot banner">
+
+
+        <div class = "wrapper">
+            <article class = "img-info">
+                <h1>BOB THE LAZY BOT</h1>
+                <h3>Have a nice chat with Bob!</h3>
+                <br><br>
+
+                <input type ="text" id="t1" placeholder = "Text Here...";>
+                <button onclick = "chatty()">Send</button>
+                <p id = "message1"></p>
+
+                <script>
+                    function chatty(){
+                        var bob1;
+                        var text1 = t1.value;
+                        if (text1 == "Bob" || text1 == "bob"){
+                            bob1 = "Fine. Be that way!";
+                        }else{
+                            bob1 = "Whatever";
+                        }
+
+                        document.getElementById("message1").innerHTML = bob1;
+
+                    }
+                </script>
+
+            </article>
+
+        </div>
+
+
+
+    </body>
+</html>
